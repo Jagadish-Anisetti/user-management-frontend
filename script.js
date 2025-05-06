@@ -1,4 +1,4 @@
-const apiUrl = 'https://user-management-backend-1qyw.onrender.com';
+const apiUrl = 'https://user-management-backend-thr2.onrender.com';
 
 if (location.pathname.includes('view.html')) {
   let currentPage = 1;

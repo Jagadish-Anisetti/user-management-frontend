@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>View Users</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Optional: style for better look */
+    .pagination-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    .pagination-container button {
+      padding: 5px 10px;
+      cursor: pointer;
+      border: 1px solid #ccc;
+      background-color: #f0f0f0;
+    }
+
+    .pagination-container button.active {
+      background-color: #007bff;
+      color: white;
+      font-weight: bold;
+      border-color: #007bff;
+    }
+
+    .pagination-container button:disabled {
+      background-color: #ddd;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="location.href='index.html'">Add User</button>
+  <input id="searchInput" placeholder="Search by name" />
+  <label><input type="radio" name="status" value=""> All</label>
+  <label><input type="radio" name="status" value="active"> Active</label>
+  <label><input type="radio" name="status" value="inactive"> Inactive</label>
+
+  <table id="userTable">
+    <thead>
+      <tr><th>S.no</th><th>Name</th><th>Email</th><th>Phone</th><th>City</th><th>Status</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Pagination -->
+  <div class="pagination-container">
+    <button id="prevBtn">Prev</button>
+    <div id="pageNumbers"></div>
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

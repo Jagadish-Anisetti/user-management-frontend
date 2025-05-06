@@ -1,0 +1,39 @@
+body {
+    font-family: Arial;
+    margin: 20px;
+  }
+  form, table {
+    margin-top: 20px;
+  }
+  input, select, button {
+    margin: 5px;
+    padding: 5px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid #ccc;
+  }
+  th, td {
+    padding: 10px;
+  }
+  #pageNumbers button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #pageNumbers button.active-page {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+  }
+  
+  #pageNumbers button:hover {
+    background-color: #0056b3;
+  }
+  
+  

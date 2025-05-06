@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add User</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <button onclick="location.href='view.html'">View Users</button>
+  <h2>Add User</h2>
+  <form id="userForm">
+    <input placeholder="Name" name="name" required />
+    <input placeholder="Email" name="email" required />
+    <input placeholder="Phone" name="phone" required />
+    <input placeholder="City" name="city" required />
+    <select name="status" required>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>

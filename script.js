@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:5000/api/users';
+const apiUrl = 'https://user-management-backend-1qyw.onrender.com';
 
 if (location.pathname.includes('view.html')) {
   let currentPage = 1;
